@@ -39,9 +39,12 @@ Anna
 
 ``` python
         """ Code in python"""
-        temp_df = master_subset[(master_subset['NPSH_DT']== master_subset['CLSD_DT']) && (master_subset['SNPSH_DT'] != 0)  && (master_subset['SNPSH_DT'] < (master_subset['TT']+1)].copy() """ This line filters the data"""
+        temp_df = master_subset[(master_subset['NPSH_DT']== master_subset['CLSD_DT']) && \
+                (master_subset['SNPSH_DT'] != 0)  && (master_subset['SNPSH_DT'] < (master_subset['TT']+1)].copy() 
+                """ This line filters the data"""
         temp_df[['DEAL_SIZE']].fillna(0,inplace=True)
-        tmp= temp_df.groupby('SNPSH_DT')['DEAL_SIZE'].sum() """ This code generate sum value with group by """
+        tmp= temp_df.groupby('SNPSH_DT')['DEAL_SIZE'].sum() 
+        """ This code generate sum value with group by """
 ```    
 4. Please explain what are the benefits of Deep learning and how it differentiates from GLM, Decision trees class of models?
 
