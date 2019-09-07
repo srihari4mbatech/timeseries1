@@ -20,6 +20,7 @@ Anna
 3. Please re-write the following code in Python:
 
 ``` R
+        
         tmp <- ddply(filter(master_subset, SNPSH_DT == CLSD_DT &
 
                     SNPSH_DT != 0 &
@@ -35,8 +36,9 @@ Anna
     - Step1: Filtering the dataset on SNPSH_DT.
     - Step2: Replaceing null values of deal_size,
     - Step3: Groupby on SNPSH_DT to find sum of deal_size.
-    
+
 ``` python
+        """ Code in python"""
         temp_df = master_subset[(master_subset['NPSH_DT']== master_subset['CLSD_DT']) && (master_subset['SNPSH_DT'] != 0)  && (master_subset['SNPSH_DT'] < (master_subset['TT']+1)].copy() """ This line filters the data"""
         temp_df[['DEAL_SIZE']].fillna(0,inplace=True)
         tmp= temp_df.groupby('SNPSH_DT')['DEAL_SIZE'].sum() """ This code generate sum value with group by """
