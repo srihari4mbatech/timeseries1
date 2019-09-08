@@ -34,7 +34,7 @@ Anna
                     })
 ```
     - Step1: Filtering the dataset on SNPSH_DT.
-    - Step2: Replaceing null values of deal_size,
+    - Step2: Replacing null values of deal_size,
     - Step3: Groupby on SNPSH_DT to find sum of deal_size.
 
 ``` python
