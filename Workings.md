@@ -6,11 +6,6 @@ Please provide as complete answers as possible with examples of software, packag
 
 Any code provided needs to be run through – once open in R studio or Python it needs to install needed packages, connect (the testing machine will be online though Dell VPN) and run the procedures.
 
-Due date – midnight CST US Sun (Sun evening)
-
-Have fun!
-Anna
-
 1. You have a time series of revenue from a particular sport gear store. It is time series with weeks assigned. The time series have seasonality and trend. The goal is to predict the next  10 weeks as accurately as possible. The data is attached in Excel file, please use software that you see fit and provide the code together with your answers. The code has to be run through, that means if I open in R environment I should be able to run end to end and have the forecast in the output. The white paper should have explanation of model selection and the criteria of the choice of the model and parameters if needed.
     - [Jupyter Notebook](https://github.com/srihari4mbatech/timeseries1/blob/master/TimeSeries.ipynb)
 
